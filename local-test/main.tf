@@ -1,5 +1,5 @@
 module "environment" {
   source      = "../modules/environment"
   deployment  = "local"
-  environment = "dev"
+  environment = "test"
 }
