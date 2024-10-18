@@ -1,36 +1,45 @@
 # Infrastructure as Code
 
-## Development
+## Development Environment
 
 ```shell
-cd local-dev
+cd iac-local-dev
 terraform init
 terraform plan
 terraform apply
 ```
 
-## Preproduction
+## Test Environment
 
 ```shell
-cd local-pre
+cd iac-local-test
 terraform init
 terraform plan
 terraform apply
 ```
 
-## Production
+## Preproduction Environment
 
 ```shell
-cd local-prod
+cd iac-local-pre
 terraform init
 terraform plan
 terraform apply
 ```
-## DevOps
+
+## Production Environment
 
 ```shell
-cd local-devops
-../scripts/import_resources.sh
+cd iac-local-prod
+terraform init
+terraform plan
+terraform apply
+```
+
+## DevOps Environment
+
+```shell
+cd iac-local-devops
 terraform init
 terraform plan
 terraform apply
